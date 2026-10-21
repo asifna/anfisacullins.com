@@ -51,14 +51,14 @@ nav .cta:hover{background:var(--coral-d)}
 .hero-band{position:relative;background:linear-gradient(180deg,var(--bg2),#fff 85%)}
 #net{display:none}
 .hero{padding-top:140px;padding-bottom:70px}
-.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.hero-grid{display:grid;grid-template-columns:1fr auto;gap:64px;align-items:center}
 .eyebrow{display:inline-block;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--coral-d);font-weight:700;margin-bottom:20px}
 .hero h1{font-size:clamp(46px,7.2vw,88px);letter-spacing:-.035em;line-height:1}
 .hero .lede{font-family:var(--head);font-size:clamp(24px,3.1vw,36px);line-height:1.25;margin:22px 0 20px;font-weight:600}
 .hero .intro{color:var(--muted);font-size:18px;max-width:640px}
-.collage{display:grid;grid-template-columns:1.1fr .9fr;grid-template-rows:1fr 1fr;gap:12px;height:500px}
+.collage{display:flex;justify-content:center;align-items:center}
 .collage figure{margin:0;border-radius:16px;overflow:hidden;box-shadow:var(--shadow);position:relative}
-.collage figure:first-child{grid-row:span 2}
+.collage figure{width:260px;aspect-ratio:3/4}
 .collage img{display:block;width:100%;height:100%;object-fit:cover}
 .collage .headshot{filter:grayscale(1);object-position:50% 20%}
 .collage figcaption{position:absolute;left:10px;bottom:10px;background:#fff;color:var(--ink);font-size:12px;font-weight:600;padding:3px 10px;border-radius:999px}
@@ -67,8 +67,8 @@ nav .cta:hover{background:var(--coral-d)}
 .btn:hover{transform:translateY(-2px);background:var(--ink);color:#fff}
 .btn.primary{background:var(--coral);border-color:var(--coral);color:#fff;box-shadow:0 12px 26px -12px rgba(238,74,59,.75)}
 .btn.primary:hover{background:var(--coral-d);border-color:var(--coral-d)}
-@media (max-width:900px){.hero{padding-top:104px}.hero-grid{grid-template-columns:1fr;gap:36px}.collage{height:360px}}
-@media (max-width:480px){.collage{height:300px}}
+@media (max-width:900px){.hero{padding-top:104px}.hero-grid{grid-template-columns:1fr;gap:36px}.collage{justify-content:flex-start}}
+@media (max-width:480px){.collage figure{width:160px}}
 
 /* stats band */
 .stats{display:grid;grid-template-columns:repeat(5,1fr);margin-top:70px;background:var(--coral);border-radius:20px;overflow:hidden;box-shadow:0 24px 50px -28px rgba(238,74,59,.8)}
@@ -310,8 +310,6 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
   </div>
   <div class="collage">
     <figure><img class="headshot" src="img/headshot.jpg" alt="Portrait of Anfisa Cullins"></figure>
-    <figure><img src="img/moscone.jpg" alt="Anfisa at the Moscone Center, San Francisco" style="object-position:70% 60%"><figcaption>Data + AI Summit</figcaption></figure>
-    <figure><img src="img/hiking.jpg" alt="Anfisa hiking" style="object-position:70% 50%"><figcaption>Off the clock</figcaption></figure>
   </div>
   </div>
 

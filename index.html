@@ -1,0 +1,635 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script>document.documentElement.classList.add("js")</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anfisa Cullins · Healthcare Data & AI Platform Leader</title>
+<meta name="description" content="Anfisa Cullins turns complex healthcare data into trusted platforms, products and AI. 20+ years across IQVIA, HealthVerity and ConcertAI.">
+<meta property="og:title" content="Anfisa Cullins · Healthcare Data & AI Platform Leader">
+<meta property="og:description" content="I turn complex healthcare data into trusted platforms, products and AI.">
+<meta property="og:url" content="https://anfisacullins.com/">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://anfisacullins.com/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23ee4a3b'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-weight='bold' font-size='28' fill='white' text-anchor='middle'%3EAC%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ffffff; --bg2:#fff4f1; --surface:#ffffff; --line:#ece4e2; --ink:#1d2540; --muted:#5d6479;
+  --coral:#ee4a3b; --coral-d:#d63a2c; --coral-soft:#ffd9d1; --indigo:#4553d6; --amber:#f2a516;
+  --head:"Space Grotesk",Inter,system-ui,sans-serif; --sans:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --max:1140px; --shadow:0 18px 50px -24px rgba(29,37,64,.28);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:var(--coral-d)}
+img{max-width:100%}
+code{font-size:.9em;background:var(--bg2);padding:1px 6px;border-radius:5px;color:var(--coral-d)}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+h1,h2,h3,h4{font-family:var(--head);font-weight:700;line-height:1.1;margin:0;letter-spacing:-.02em}
+p{margin:0 0 1em}
+.hl,.grad{background:linear-gradient(transparent 58%,var(--coral-soft) 58%,var(--coral-soft) 92%,transparent 92%);padding:0 .08em;-webkit-box-decoration-break:clone;box-decoration-break:clone;color:inherit}
+
+/* nav */
+header.top{position:fixed;inset:0 0 auto 0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:border-color .3s,box-shadow .3s}
+header.top.scrolled{border-color:var(--line);box-shadow:0 6px 24px -18px rgba(29,37,64,.4)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:66px;gap:16px}
+.logo{white-space:nowrap;font-family:var(--head);font-weight:700;font-size:19px;color:var(--ink);text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo::before{content:"";width:30px;height:30px;border-radius:7px;background:var(--coral);box-shadow:inset 0 0 0 7px var(--coral),inset 0 0 0 12px #fff}
+.logo span{display:none}
+nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0;font-size:14.5px;font-weight:500}
+nav a{color:var(--ink);text-decoration:none;padding:6px 0;border-bottom:2px solid transparent;transition:border-color .2s,color .2s}
+nav a:hover{border-color:var(--coral)}
+nav .cta{color:#fff;background:var(--coral);padding:9px 18px;border-radius:8px;border:0}
+nav .cta:hover{background:var(--coral-d)}
+@media (max-width:860px){nav li:not(.keep){display:none}}
+
+/* hero */
+.hero-band{position:relative;background:linear-gradient(180deg,var(--bg2),#fff 85%)}
+#net{display:none}
+.hero{padding-top:140px;padding-bottom:70px}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.eyebrow{display:inline-block;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--coral-d);font-weight:700;margin-bottom:20px}
+.hero h1{font-size:clamp(46px,7.2vw,88px);letter-spacing:-.035em;line-height:1}
+.hero .lede{font-family:var(--head);font-size:clamp(24px,3.1vw,36px);line-height:1.25;margin:22px 0 20px;font-weight:600}
+.hero .intro{color:var(--muted);font-size:18px;max-width:640px}
+.collage{display:grid;grid-template-columns:1.1fr .9fr;grid-template-rows:1fr 1fr;gap:12px;height:500px}
+.collage figure{margin:0;border-radius:16px;overflow:hidden;box-shadow:var(--shadow);position:relative}
+.collage figure:first-child{grid-row:span 2}
+.collage img{display:block;width:100%;height:100%;object-fit:cover}
+.collage .headshot{filter:grayscale(1);object-position:50% 20%}
+.collage figcaption{position:absolute;left:10px;bottom:10px;background:#fff;color:var(--ink);font-size:12px;font-weight:600;padding:3px 10px;border-radius:999px}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.btn{display:inline-flex;align-items:center;padding:14px 24px;border-radius:8px;font-weight:600;font-size:15px;text-decoration:none;border:2px solid var(--ink);color:var(--ink);background:transparent;transition:transform .2s,background .2s,color .2s}
+.btn:hover{transform:translateY(-2px);background:var(--ink);color:#fff}
+.btn.primary{background:var(--coral);border-color:var(--coral);color:#fff;box-shadow:0 12px 26px -12px rgba(238,74,59,.75)}
+.btn.primary:hover{background:var(--coral-d);border-color:var(--coral-d)}
+@media (max-width:900px){.hero{padding-top:104px}.hero-grid{grid-template-columns:1fr;gap:36px}.collage{height:360px}}
+@media (max-width:480px){.collage{height:300px}}
+
+/* stats band */
+.stats{display:grid;grid-template-columns:repeat(5,1fr);margin-top:70px;background:var(--coral);border-radius:20px;overflow:hidden;box-shadow:0 24px 50px -28px rgba(238,74,59,.8)}
+.stat{padding:28px 22px;color:#fff;position:relative}
+.stat+.stat::before{content:"";position:absolute;left:0;top:22px;bottom:22px;width:1px;background:rgba(255,255,255,.35)}
+.stat b{display:block;font-family:var(--head);font-size:34px;line-height:1.05;font-weight:700}
+.stat span{display:block;font-size:13.5px;margin-top:10px;line-height:1.45;color:rgba(255,255,255,.9)}
+@media (max-width:980px){.stats{grid-template-columns:repeat(2,1fr)}.stat:last-child{grid-column:span 2}.stat+.stat::before{display:none}.stat{border-top:1px solid rgba(255,255,255,.25)}}
+
+/* sections */
+section{padding:110px 0;position:relative}
+section:nth-of-type(even){background:var(--bg2)}
+.sec-head{display:flex;gap:16px;align-items:center;margin-bottom:16px}
+.num{font-family:var(--head);font-size:15px;font-weight:700;width:44px;height:44px;display:grid;place-items:center;border-radius:12px;background:var(--coral);color:#fff;flex:none}
+.sec-head h2{font-size:clamp(34px,4.6vw,56px);letter-spacing:-.03em}
+.sec-intro{color:var(--muted);font-size:18.5px;max-width:720px;margin-bottom:52px}
+
+/* arc */
+.arc{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-bottom:64px;position:relative;padding-top:28px}
+.arc::before{content:"";position:absolute;left:0;right:0;top:7px;height:3px;background:var(--coral-soft);border-radius:3px}
+.arc div{position:relative}
+.arc div::before{content:"";position:absolute;top:-28px;left:0;width:17px;height:17px;border-radius:50%;background:#fff;border:4px solid var(--coral)}
+.arc small{color:var(--coral-d);font-weight:700;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase}
+.arc h3{font-size:26px;margin:6px 0 6px}
+.arc p{color:var(--muted);font-size:14.5px;margin:0}
+@media (max-width:820px){.arc{grid-template-columns:1fr 1fr;row-gap:44px}}
+
+/* cases */
+.case{--c:var(--coral);background:#fff;border:1px solid var(--line);border-radius:22px;padding:40px 40px 36px 46px;margin-bottom:24px;position:relative;overflow:hidden;box-shadow:var(--shadow);transition:transform .3s}
+.case:hover{transform:translateY(-3px)}
+.case::before{content:"";position:absolute;inset:0 auto 0 0;width:8px;background:var(--c)}
+.case:nth-of-type(2){--c:var(--indigo)}
+.case:nth-of-type(3){--c:var(--amber)}
+.case .tag{display:flex;flex-wrap:wrap;gap:8px 14px;font-size:13.5px;color:var(--muted);margin-bottom:14px;align-items:center}
+.case .tag b{background:var(--c);color:#fff;letter-spacing:.08em;text-transform:uppercase;font-size:12px;padding:4px 10px;border-radius:6px}
+.case h3{font-size:clamp(26px,3vw,34px);margin-bottom:14px}
+.case .summary{font-size:17px;max-width:820px;color:#3a4260}
+.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:26px 0 10px}
+.metrics div{background:var(--bg2);border-radius:14px;padding:18px}
+.metrics b{display:block;font-family:var(--head);font-size:32px;font-weight:700;color:var(--c);line-height:1.1}
+.case:nth-of-type(3) .metrics b{color:#c98100}
+.metrics span{font-size:13.5px;color:var(--muted)}
+@media (max-width:700px){.metrics{grid-template-columns:1fr}.case{padding:28px 22px 28px 28px}}
+details{margin-top:16px}
+summary{cursor:pointer;font-weight:700;color:var(--ink);list-style:none;display:inline-flex;align-items:center;gap:10px;padding:10px 18px;border:2px solid var(--ink);border-radius:8px;transition:background .2s,color .2s}
+summary:hover{background:var(--ink);color:#fff}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:18px;line-height:1}
+details[open] summary::after{content:"–"}
+.story{display:grid;grid-template-columns:150px 1fr;gap:12px 28px;margin-top:26px;font-size:15.5px}
+.story dt{font-weight:700;color:var(--ink);font-family:var(--head)}
+.story dd{margin:0;color:#4a5170}
+@media (max-width:640px){.story{grid-template-columns:1fr}.story dd{margin-bottom:10px}}
+.quote{border-left:5px solid var(--c,var(--coral));padding:4px 0 4px 18px;font-family:var(--head);font-weight:600;font-size:20px;line-height:1.4;margin:26px 0 0;color:var(--ink)}
+.flow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:10px}
+.flow span{background:var(--bg2);color:var(--ink);border-radius:8px;padding:5px 11px;font-size:13.5px;font-weight:500}
+.flow i{color:var(--c);font-style:normal;font-weight:700}
+.personas{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:10px}
+.personas div{border:1px solid var(--line);border-radius:12px;padding:14px;font-size:14px;color:var(--muted)}
+.personas b{display:block;color:var(--ink);margin-bottom:4px}
+@media (max-width:760px){.personas{grid-template-columns:1fr}}
+.more{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:8px}
+.more div{border:2px dashed var(--coral-soft);border-radius:18px;padding:22px}
+.more h4{margin:0 0 6px;font-size:17px}
+.more p{margin:0;color:var(--muted);font-size:14.5px}
+@media (max-width:760px){.more{grid-template-columns:1fr}}
+
+/* perspective */
+.ideas{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.idea{background:#fff;border:1px solid var(--line);border-radius:22px;padding:32px;box-shadow:var(--shadow);transition:transform .3s}
+.idea:hover{transform:translateY(-3px)}
+.idea h3{font-size:23px;margin-bottom:14px}
+.idea:not(.wide) h3::before{content:"“";display:block;font-size:70px;line-height:.6;margin-bottom:8px;color:var(--coral);font-family:Georgia,serif}
+.idea p{color:var(--muted);margin:0;font-size:15.5px}
+.idea ol{color:var(--muted);font-size:15px;margin:0;padding-left:20px}
+.idea ol li::marker{color:var(--coral);font-weight:700}
+.idea.wide{grid-column:span 2;background:var(--ink);color:#fff;border:0}
+.idea.wide p{color:#c6cbe0}
+.levels{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px;counter-reset:lv}
+.levels div{background:rgba(255,255,255,.07);border-radius:14px;padding:18px;font-size:14px;color:#c6cbe0;counter-increment:lv}
+.levels div::before{content:"0" counter(lv);display:block;font-family:var(--head);font-weight:700;font-size:26px;color:#ff8577;margin-bottom:6px}
+.levels b{display:block;color:#fff;font-size:15.5px;margin-bottom:4px}
+@media (max-width:760px){.ideas{grid-template-columns:1fr}.idea.wide{grid-column:auto}.levels{grid-template-columns:1fr}}
+
+/* leadership */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+@media (max-width:820px){.two{grid-template-columns:1fr;gap:40px}}
+.two h3{font-size:24px;margin-bottom:12px}
+.two p{color:var(--muted)}
+.teams{display:grid;gap:10px;margin-top:20px}
+.team{display:grid;grid-template-columns:160px 1fr;gap:16px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px;font-size:14.5px}
+.team b{font-family:var(--head);font-size:17px;display:block}
+.team small{display:inline-block;margin-top:4px;color:#fff;font-weight:700;font-size:12.5px;padding:2px 9px;border-radius:6px;background:var(--coral)}
+.team span{color:var(--muted)}
+.team.partner{background:transparent;border-style:dashed}
+.team.partner small{background:var(--muted)}
+.cycle{counter-reset:c;list-style:none;padding:0;margin:20px 0 0;position:relative}
+.cycle::before{content:"";position:absolute;left:16px;top:8px;bottom:22px;width:3px;background:var(--coral-soft)}
+.cycle li{counter-increment:c;position:relative;padding:0 0 20px 52px;color:var(--muted);font-size:15px}
+.cycle li::before{content:counter(c);position:absolute;left:0;top:-3px;width:35px;height:35px;border-radius:10px;background:var(--coral);color:#fff;font-weight:700;font-size:15px;display:grid;place-items:center}
+.cycle b{color:var(--ink)}
+
+/* expertise */
+.dlabel{font-size:12.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--coral-d);margin:0 0 14px}
+.domains{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:22px}
+.found{background:#fff;border:1px solid var(--line);border-left:5px solid var(--coral);border-radius:18px;padding:24px 26px;margin-bottom:22px;box-shadow:var(--shadow)}
+.found-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.found h4{font-family:var(--head);font-size:17px;margin:0 0 6px;color:var(--ink)}
+.found-grid p{color:var(--muted);font-size:14px;margin:0}
+@media (max-width:960px){.found-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.found-grid{grid-template-columns:1fr}}
+.uses{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:48px}
+.use{background:var(--ink);color:#fff;border-radius:18px;padding:24px 26px;box-shadow:var(--shadow)}
+.use h3{font-size:21px;margin-bottom:10px;color:#fff}
+.use p{color:#c9cee0;font-size:14px;margin:0 0 12px}
+.use em{display:block;font-style:normal;font-size:14px;font-weight:600;border-top:1px solid rgba(255,255,255,.15);padding-top:12px}
+@media (max-width:700px){.uses{grid-template-columns:1fr}}
+.domain{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:var(--shadow)}
+.domain h3{font-size:21px;margin-bottom:10px;display:flex;align-items:center;gap:10px}
+.domain h3::before{content:"";width:12px;height:12px;border-radius:3px;background:var(--coral)}
+.domain:nth-child(2) h3::before{background:var(--indigo)}
+.domain:nth-child(3) h3::before{background:var(--amber)}
+.domain:nth-child(4) h3::before{background:var(--ink)}
+.domain p{color:var(--muted);font-size:14px;margin:0 0 12px}
+.domain em{display:block;font-style:normal;font-size:14px;color:var(--ink);border-top:1px solid var(--line);padding-top:12px;font-weight:600}
+@media (max-width:960px){.domains{grid-template-columns:1fr}}
+@media (max-width:560px){.domains{grid-template-columns:1fr}}
+.funnel-box{background:#fff;border:1px solid var(--line);border-radius:22px;padding:36px;margin-bottom:48px;box-shadow:var(--shadow)}
+.funnel-box h3{font-size:26px;margin-bottom:6px}
+.funnel-box .note{color:var(--muted);font-size:13.5px;margin-bottom:24px}
+.funnel{display:grid;gap:9px}
+.frow{display:grid;grid-template-columns:200px 1fr 64px;gap:14px;align-items:center;font-size:14px;font-weight:500}
+.frow .bar{height:26px;border-radius:6px;background:var(--coral);transform-origin:left;transition:transform 1.1s cubic-bezier(.2,.7,.2,1)}
+.frow:nth-child(n+5) .bar{background:#f3786c}
+.frow:nth-child(n+6) .bar{background:#f8a59c}
+.js .funnel:not(.in) .bar{transform:scaleX(0)}
+.frow .v{color:var(--ink);text-align:right;font-variant-numeric:tabular-nums;font-family:var(--head);font-weight:700}
+@media (max-width:600px){.frow{grid-template-columns:118px 1fr 46px;font-size:12.5px;gap:8px}.funnel-box{padding:24px 18px}}
+.stack{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.stack h4{margin:0 0 12px;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--coral-d);font-family:var(--sans)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{border:1.5px solid var(--line);background:#fff;border-radius:8px;padding:6px 12px;font-size:14px;font-weight:500;transition:border-color .2s}
+.chips span:hover{border-color:var(--coral)}
+@media (max-width:820px){.stack{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.stack{grid-template-columns:1fr}}
+
+/* recognition */
+.recog{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.recog>div{background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px;border-top:6px solid var(--coral);box-shadow:var(--shadow)}
+.recog small{color:var(--coral-d);font-weight:700;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase}
+.recog h3{font-size:19px;margin:10px 0 10px;line-height:1.3}
+.recog p{color:var(--muted);font-size:14px;margin:0}
+@media (max-width:820px){.recog{grid-template-columns:1fr}}
+.stage{display:grid;grid-template-columns:220px 248px;gap:16px;margin-top:28px}
+.stage figure{margin:0;border-radius:16px;overflow:hidden;height:330px;box-shadow:var(--shadow)}
+.stage img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.stage figure:hover img{transform:scale(1.04)}
+.stagecap{color:var(--muted);font-size:13.5px;margin-top:12px;max-width:620px}
+@media (max-width:560px){.stage{grid-template-columns:1fr 1fr}.stage figure{height:auto;aspect-ratio:2/3}}
+
+/* about */
+.about p{font-size:18px;max-width:780px;color:#3a4260}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.facts span{color:var(--muted);font-size:14px;background:#fff;border:1px solid var(--line);border-radius:8px;padding:7px 14px}
+.facts b{color:var(--ink);font-weight:700}
+.about h3{font-size:26px !important}
+.about h3 + p{color:var(--muted) !important}
+.offclock{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:22px;max-width:900px}
+.offclock figure{margin:0;position:relative;border-radius:16px;overflow:hidden;aspect-ratio:1/1;box-shadow:var(--shadow)}
+.offclock img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.offclock figure:hover img{transform:scale(1.06)}
+.offclock figcaption{position:absolute;left:10px;bottom:10px;background:#fff;color:var(--ink);font-size:12.5px;font-weight:600;padding:3px 10px;border-radius:999px}
+@media (max-width:700px){.offclock{gap:8px}.offclock figure{border-radius:10px}.offclock figcaption{font-size:10.5px;left:5px;bottom:5px;padding:2px 6px}}
+
+/* contact */
+.contact{padding:110px 0}
+.contact .panel{text-align:center;border-radius:28px;padding:80px 32px;background:var(--coral);color:#fff;box-shadow:0 30px 60px -30px rgba(238,74,59,.9);position:relative;overflow:hidden}
+.contact .panel::before,.contact .panel::after{content:"";position:absolute;border-radius:50%;background:rgba(255,255,255,.1)}
+.contact .panel::before{width:340px;height:340px;left:-120px;top:-160px}
+.contact .panel::after{width:260px;height:260px;right:-80px;bottom:-140px}
+.contact h2{font-size:clamp(32px,4.6vw,54px);max-width:820px;margin:0 auto 16px;letter-spacing:-.03em;position:relative}
+.contact p{color:rgba(255,255,255,.92);font-size:18px;position:relative}
+.contact .btns{justify-content:center;position:relative}
+.contact .btn{border-color:#fff;color:#fff}
+.contact .btn:hover{background:#fff;color:var(--coral-d)}
+.contact .btn.primary{background:#fff;color:var(--coral-d);box-shadow:none}
+.contact .btn.primary:hover{background:var(--ink);border-color:var(--ink);color:#fff}
+footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:13.5px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+
+/* numbered case titles, photo strip (from the photography-site example) */
+#work .wrap{counter-reset:cs}
+.case{counter-increment:cs}
+.case h3::before{content:"/0" counter(cs);display:block;font-size:15px;letter-spacing:.06em;color:var(--c);margin-bottom:6px}
+.case:nth-of-type(3) h3::before{color:#c98100}
+.offclock{max-width:none;grid-template-columns:repeat(6,1fr);gap:12px}
+.offclock figure{aspect-ratio:4/3;border-radius:12px}
+@media (max-width:700px){.offclock{grid-template-columns:repeat(3,1fr)}}
+
+/* reveal */
+.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.js .reveal{opacity:1;transform:none;transition:none}.js .funnel:not(.in) .bar{transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top">Anfisa Cullins<span>.</span></a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#perspective">Perspective</a></li>
+        <li><a href="#leadership">Leadership</a></li>
+        <li><a href="#expertise">Expertise</a></li>
+        <li><a href="#about">About</a></li>
+        <li class="keep"><a href="resume/AnfisaCullins_Resume.pdf">Resume</a></li>
+        <li class="keep"><a class="cta" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero-band">
+<div class="wrap hero">
+  <div class="hero-grid"><div>
+  <div class="eyebrow">Healthcare Data &amp; AI Platform Leader · Greater Philadelphia</div>
+  <h1>Anfisa Cullins</h1>
+  <p class="lede">I turn complex healthcare data into <span class="hl">trusted platforms, products and AI.</span></p>
+  <p class="intro">For 20 years I've built the data foundations behind patient-level analytics and commercial pharma decisions, at IQVIA, HealthVerity and ConcertAI. I'm as comfortable in the executive conversation about strategy as in the architecture review with engineers, and I stay close to both.</p>
+  <div class="btns">
+    <a class="btn primary" href="#work">See my work</a>
+    <a class="btn ghost" href="resume/AnfisaCullins_Resume.pdf">Download resume</a>
+    <a class="btn ghost" href="https://www.linkedin.com/in/anfisak/" rel="noopener">LinkedIn</a>
+  </div>
+  </div>
+  <div class="collage">
+    <figure><img class="headshot" src="img/headshot.jpg" alt="Portrait of Anfisa Cullins"></figure>
+    <figure><img src="img/moscone.jpg" alt="Anfisa at the Moscone Center, San Francisco" style="object-position:70% 60%"><figcaption>Data + AI Summit</figcaption></figure>
+    <figure><img src="img/hiking.jpg" alt="Anfisa hiking" style="object-position:70% 50%"><figcaption>Off the clock</figcaption></figure>
+  </div>
+  </div>
+
+  <div class="stats" role="list">
+    <div class="stat" role="listitem"><b>5+ PB</b><span>U.S. patient-level data ecosystem re-platformed</span></div>
+    <div class="stat" role="listitem"><b>6 wks → real time</b><span>Patient cohort analysis, via patented data structures</span></div>
+    <div class="stat" role="listitem"><b>6 → 2 wks</b><span>Data supplier onboarding, 60–70% automated</span></div>
+    <div class="stat" role="listitem"><b>40%</b><span>Lower data processing costs after Databricks modernization</span></div>
+    <div class="stat" role="listitem"><b>~50</b><span>Engineers and architects led across the U.S., Poland and India</span></div>
+  </div>
+</div>
+</div>
+
+<!-- 01 WORK -->
+<section id="work">
+  <div class="wrap">
+    <div class="sec-head"><span class="num">01</span><h2>Selected work</h2></div>
+    <p class="sec-intro">Three transformations, three chapters of the same story: first scale, then platform, then AI.</p>
+
+    <div class="arc">
+      <div><small>2005–2011 · SDI</small><h3>Analytics</h3><p>Hands-on SQL and methodology on patient-level prescription and medical data.</p></div>
+      <div><small>2011–2021 · IQVIA</small><h3>Scale</h3><p>From syndicated data products to a 5+ PB longitudinal patient platform.</p></div>
+      <div><small>2022–2024 · HealthVerity</small><h3>Platform</h3><p>From custom services to a reusable, governed data platform.</p></div>
+      <div><small>2025–2026 · ConcertAI</small><h3>AI</h3><p>AI-ready foundations and GenAI products for commercial users.</p></div>
+    </div>
+
+    <!-- IQVIA -->
+    <article class="case">
+      <div class="tag"><b>IQVIA</b><span>Director, Technical Architecture</span><span>2011–2021</span></div>
+      <h3>Scaling longitudinal patient intelligence</h3>
+      <p class="summary">Re-platformed IQVIA's U.S. patient-level data ecosystem and invented the longitudinal data structures that made complex cohort analysis interactive.</p>
+      <div class="metrics">
+        <div><b>5+ PB</b><span>Patient-level claims and Rx data re-platformed</span></div>
+        <div><b>6 wks → real time</b><span>Complex patient cohort analysis</span></div>
+        <div><b>U.S. patent</b><span>Longitudinal medical data records</span></div>
+      </div>
+      <details>
+        <summary>Read the case study</summary>
+        <dl class="story">
+          <dt>Challenge</dt><dd>More than five petabytes of U.S. longitudinal claims and prescription data lived on legacy platforms. Complex cohort studies took up to six weeks, and the organization didn't yet have the skills a big-data platform needed.</dd>
+          <dt>My role</dt><dd>Owned the architecture and built the engineering and data teams to deliver it, in the U.S., Warsaw and Bangalore.</dd>
+          <dt>What we built</dt><dd>A distributed, Hadoop-based platform for longitudinal patient data, with new data structures for non-conforming medical records that let analysts define cohorts interactively. We created an AI-ready layer so data scientists could work with patient-level data at full scale.</dd>
+          <dt>Outcome</dt><dd>Cohort analysis went from up to six weeks to near real time. The platform enabled some of IQVIA's first large-scale ML workflows and powered patient-level products across the U.S. life sciences business.</dd>
+        </dl>
+        <p class="quote">"It wasn't simply moving five petabytes to a new platform. We changed what the company could do with its data."</p>
+      </details>
+    </article>
+
+    <!-- HealthVerity -->
+    <article class="case">
+      <div class="tag"><b>HealthVerity</b><span>VP, Data Platform &amp; Data Product Engineering</span><span>2022–2024</span></div>
+      <h3>From custom services to a reusable data platform</h3>
+      <p class="summary">Led the move from project-based data services to a multi-tenant Databricks Lakehouse, and stayed hands-on with the architecture and implementation.</p>
+      <div class="metrics">
+        <div><b>~100</b><span>Healthcare data suppliers, datasets up to 200 TB</span></div>
+        <div><b>6 → 2 wks</b><span>Supplier onboarding, 60–70% automated</span></div>
+        <div><b>~50%</b><span>Lower infrastructure costs</span></div>
+      </div>
+      <details>
+        <summary>Read the case study</summary>
+        <dl class="story">
+          <dt>Challenge</dt><dd>Client solutions were delivered as custom, project-based services. Every new supplier and client meant repeated manual work, high delivery costs and slow time to value.</dd>
+          <dt>My role</dt><dd>Led data platform and data product engineering. I designed the Lakehouse architecture and migration strategy and worked hands-on with SQL, Python and PySpark.</dd>
+          <dt>What we built</dt><dd>
+            A centralized platform that standardized acquisition, identity resolution, quality, governance and delivery:
+            <div class="flow"><span>Common ingestion</span><i>→</i><span>Standardized healthcare data</span><i>→</i><span>Reusable processing</span><i>→</i><span>Shared data products</span><i>→</i><span>Scalable consumption</span></div>
+            <br>We used a medallion architecture with Unity Catalog governance, lineage, observability, CI/CD and infrastructure as code. Onboarding combined ML/NLP-based field mapping, sensitive-data detection and human-in-the-loop review, and its feedback loop made the models better with every new feed.
+          </dd>
+          <dt>Outcome</dt><dd>Supplier onboarding dropped from six weeks to two, with 60–70% automated. Infrastructure costs fell by about half through workload tagging, incremental processing and CDC. The work became the basis for my accepted talk at Data + AI Summit 2023.</dd>
+        </dl>
+      </details>
+    </article>
+
+    <!-- ConcertAI -->
+    <article class="case">
+      <div class="tag"><b>ConcertAI</b><span>Head of Engineering, Sr Director</span><span>2025–2026</span></div>
+      <h3>Modernizing for AI-native commercial products</h3>
+      <p class="summary">Moved a large portfolio of legacy healthcare pipelines onto Databricks, embedded ML in the data products, and shipped GenAI for commercial users.</p>
+      <div class="metrics">
+        <div><b>40%</b><span>Lower data processing costs</span></div>
+        <div><b>2×</b><span>Faster new-client implementations</span></div>
+        <div><b>Production</b><span>GenAI and agentic solutions on Amazon Bedrock</span></div>
+      </div>
+      <details>
+        <summary>Read the case study</summary>
+        <dl class="story">
+          <dt>Challenge</dt><dd>Legacy ETL, fragmented analytics workflows and product-specific processing layers made each new client slow and expensive, and left no foundation for AI.</dd>
+          <dt>My role</dt><dd>Led engineering, with technical and architectural leadership across data, ML and GenAI. I helped define the future-state agentic AI architecture.</dd>
+          <dt>What we built</dt><dd>
+            A Databricks Lakehouse for ingestion, transformation, analytics and AI workloads. ML-driven patient and prescriber metrics were built into the data products themselves. On top of that, GenAI served as an <em>insight acceleration layer</em> for three kinds of users:
+            <div class="personas">
+              <div><b>Field Reimbursement Managers</b>Find at-risk patients, see the likely access barrier, prioritize interventions.</div>
+              <div><b>Hub operations leaders</b>Trends, bottlenecks and emerging issues summarized and explained.</div>
+              <div><b>Commercial analysts</b>Ask business questions in plain language and get contextual analysis.</div>
+            </div>
+            <br>We built with Amazon Bedrock and LangChain/LangSmith, and prototyped MCP-based agent and tool integration.
+          </dd>
+          <dt>Outcome</dt><dd>Processing costs fell 40%, new clients were implemented twice as fast, and GenAI ran in production in commercial workflows.</dd>
+        </dl>
+        <p class="quote">"The hard part isn't bringing the feeds together. It's standardizing statuses across vendors, resolving identities, sequencing events correctly and building reusable patient-level metrics. Then AI has something trustworthy to stand on."</p>
+      </details>
+    </article>
+
+    <div class="more">
+      <div><h4>BioTelemetry · ECG data lake</h4><p>Director, Data Strategy (2021–2022). Designed the ECG data lake behind real-time analytics and medical-grade deep-learning diagnostics that detect 20+ arrhythmia types.</p></div>
+      <div><h4>IQVIA · Outcomes research enablement</h4><p>Structured longitudinal patient data for outcomes research: cohort construction, continuity, follow-up periods and reproducible, fit-for-purpose datasets.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 PERSPECTIVE -->
+<section id="perspective">
+  <div class="wrap">
+    <div class="sec-head"><span class="num">02</span><h2>Perspective</h2></div>
+    <p class="sec-intro">How I think about data and AI after two decades of making healthcare data usable.</p>
+    <div class="ideas">
+      <div class="idea wide">
+        <h3>AI works at three levels</h3>
+        <p>Most organizations start with the first level. The real advantage comes from working on all three at once.</p>
+        <div class="levels">
+          <div><b>Inside the product</b>GenAI experiences that help users get from data to decisions faster.</div>
+          <div><b>Inside the data platform</b>Patient risk factors, provider performance metrics, enrichment and cohort intelligence.</div>
+          <div><b>Inside the organization</b>AI-assisted development, testing, documentation and observability, and later agentic engineering workflows.</div>
+        </div>
+      </div>
+      <div class="idea">
+        <h3>LLMs can infer meaning. Architecture has to provide authoritative meaning.</h3>
+        <p>A model can guess that <code>rx_id</code> is a prescription ID. It can't know your definition of an active prescription, which source wins when two systems disagree, or whether two provider IDs are the same person. Those are enterprise semantics, not language problems. The objective isn't the knowledge graph. It's trusted meaning.</p>
+      </div>
+      <div class="idea">
+        <h3>When machines consume data, metadata becomes runtime</h3>
+        <p>Analysts tolerate ambiguity, and they know which table to trust. Agents can't. So the platform has to tell them what entities exist, how they relate, where data came from, what quality applies and what actions are allowed. Semantics move from documentation into the runtime.</p>
+      </div>
+      <div class="idea">
+        <h3>Controlled workflows first, autonomy where it's needed</h3>
+        <p>I don't introduce a multi-agent framework unless the use case requires it. For deterministic business processes I prefer controlled workflows, and I give the model more autonomy only where the decision path can't be set in advance.</p>
+      </div>
+      <div class="idea">
+        <h3>When a client says "we want AI"</h3>
+        <ol>
+          <li>Understand the business objectives</li>
+          <li>Identify the decisions to improve</li>
+          <li>Assess data readiness</li>
+          <li>Prioritize high-value use cases</li>
+          <li>Build an MVP</li>
+          <li>Measure business impact</li>
+          <li>Scale what works</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 LEADERSHIP -->
+<section id="leadership">
+  <div class="wrap">
+    <div class="sec-head"><span class="num">03</span><h2>Leadership</h2></div>
+    <p class="sec-intro">I build teams that own the technology, and partnerships where clients see us as advisors rather than vendors.</p>
+    <div class="two">
+      <div>
+        <h3>Teams across borders</h3>
+        <p>I've led direct-reporting engineering, architecture and analytics teams in three countries, with shared standards and pairing across locations.</p>
+        <div class="teams">
+          <div class="team"><div><b>United States</b><small>10–15 people</small></div><span>Technical architects, data architects and analytics professionals working with U.S. clients.</span></div>
+          <div class="team"><div><b>Bangalore</b><small>15–35 people</small></div><span>Data engineers and architects, including junior hires and recent graduates developed through pairing.</span></div>
+          <div class="team"><div><b>Warsaw</b><small>~15 people</small></div><span>Mostly senior data engineers and technical architects.</span></div>
+          <div class="team partner"><div><b>Germany · UK · Romania</b><small>Partners</small></div><span>Cross-functional and contractor collaboration.</span></div>
+        </div>
+        <h3 style="margin-top:32px">Developing engineers into leaders</h3>
+        <p>I hired junior engineers in Bangalore, including recent graduates, and paired them with experienced colleagues in the U.S. and Warsaw. Some of those early hires are now senior architects who lead data engineering teams of their own, and we've stayed in touch for years.</p>
+      </div>
+      <div>
+        <h3>Partnering with clients</h3>
+        <p>I didn't carry a sales quota, but client relationships grew because every engagement follows the same cycle:</p>
+        <ol class="cycle">
+          <li><b>Understand how the client measures success</b> and the pressures their leadership faces.</li>
+          <li><b>Deliver and earn credibility.</b> Without credibility there is no next conversation.</li>
+          <li><b>Uncover the adjacent problems</b>, such as manual processes, data quality or governance gaps.</li>
+          <li><b>Shape the next solution together</b>, with account leadership and realistic estimates.</li>
+          <li><b>Run an executive value review</b> before the project ends: revisit objectives, quantify results, and plan the next 6–12 months.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 EXPERTISE -->
+<section id="expertise">
+  <div class="wrap">
+    <div class="sec-head"><span class="num">04</span><h2>Expertise</h2></div>
+    <p class="sec-intro">Healthcare data is generated for billing, dispensing and care, not for analysis. Knowing how it's generated is what makes it trustworthy.</p>
+
+    <p class="dlabel">Three views of the data</p>
+    <div class="domains">
+      <div class="domain"><h3>Patient</h3><p>Longitudinal journeys, cohort eligibility, initiation, switching, adherence and persistence, dosing, concomitant therapy.</p><em>Where do patients start, switch or drop off?</em></div>
+      <div class="domain"><h3>Payer &amp; access</h3><p>Payer and plan mapping, coverage mix, paid, rejected and reversed claims, out-of-pocket costs, remittance.</p><em>Where do access and affordability barriers appear?</em></div>
+      <div class="domain"><h3>Provider</h3><p>HCP profiles and specialty, prescribing patterns, segmentation, referral networks, provider and patient relationships.</p><em>Which providers matter, and how do they differ?</em></div>
+    </div>
+    <div class="found">
+      <p class="dlabel">The foundation under every view</p>
+      <div class="found-grid">
+        <div><h4>Entity resolution</h4><p>Matching and mastering patients, payers, providers and other industry identifiers across sources, so one person or organization is one record.</p></div>
+        <div><h4>Cleansing &amp; standardization</h4><p>Normalizing codes, statuses and formats from many vendors into consistent, reusable data.</p></div>
+        <div><h4>Data governance</h4><p>Lineage, quality controls, access policies and clear ownership, so every number can be traced and trusted.</p></div>
+        <div><h4>HIPAA &amp; de-identification</h4><p>Privacy built into the platform: patient de-identification, PII/PHI detection and quarantine, and HIPAA-compliant data handling.</p></div>
+      </div>
+    </div>
+    <p class="dlabel">Each one powers two kinds of work</p>
+    <div class="uses">
+      <div class="use"><h3>Commercial analytics</h3><p>Market share, source of business, new-to-brand, targeting, hospital sales and spillover, brand lifecycle analytics.</p><em>Where is brand growth coming from?</em></div>
+      <div class="use"><h3>Real-world evidence</h3><p>Outcomes research, treatment patterns, cohort studies and comparative analyses built on the same longitudinal data.</p><em>What happens to patients in real-world care?</em></div>
+    </div>
+
+    <div class="funnel-box">
+      <h3>Example: the patient access journey</h3>
+      <p class="note">Illustrative numbers. Each step comes from a different source: prescriptions, hub, payer, specialty pharmacy.</p>
+      <div class="funnel">
+        <div class="frow"><span>Prescriptions written</span><div class="bar" style="width:100%"></div><span class="v">10,000</span></div>
+        <div class="frow"><span>Hub enrollment</span><div class="bar" style="width:90%"></div><span class="v">9,000</span></div>
+        <div class="frow"><span>Benefits verified</span><div class="bar" style="width:80%"></div><span class="v">8,000</span></div>
+        <div class="frow"><span>Prior auth approved</span><div class="bar" style="width:68%"></div><span class="v">6,800</span></div>
+        <div class="frow"><span>Specialty pharmacy referral</span><div class="bar" style="width:62%"></div><span class="v">6,200</span></div>
+        <div class="frow"><span>First fill</span><div class="bar" style="width:54%"></div><span class="v">5,400</span></div>
+        <div class="frow"><span>Second fill</span><div class="bar" style="width:43%"></div><span class="v">4,300</span></div>
+      </div>
+      <p class="quote">With this foundation in place, AI can prioritize cases, summarize barriers and recommend the next action for each account.</p>
+    </div>
+
+    <div class="stack">
+      <div><h4>Cloud</h4><div class="chips"><span>AWS</span><span>Microsoft Azure</span></div></div>
+      <div><h4>Lakehouse &amp; warehouse</h4><div class="chips"><span>Databricks</span><span>Delta Lake</span><span>Unity Catalog</span><span>Snowflake</span><span>Redshift</span></div></div>
+      <div><h4>Processing</h4><div class="chips"><span>Spark / PySpark</span><span>Hadoop / Cloudera</span><span>Airflow</span><span>Delta Live Tables</span></div></div>
+      <div><h4>AI</h4><div class="chips"><span>Amazon Bedrock</span><span>LangChain</span><span>LangSmith</span><span>MCP</span><span>MLOps</span></div></div>
+      <div><h4>Data &amp; languages</h4><div class="chips"><span>SQL</span><span>Python</span><span>Oracle</span><span>SQL Server</span><span>RDS / Aurora</span></div></div>
+      <div><h4>Governance</h4><div class="chips"><span>Entity resolution</span><span>Patient, provider &amp; payer mastering</span><span>Data standardization</span><span>Lineage</span><span>Data quality</span><span>HIPAA</span><span>De-identification</span><span>PII/PHI detection</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 RECOGNITION -->
+<section id="recognition">
+  <div class="wrap">
+    <div class="sec-head"><span class="num">05</span><h2>Speaking &amp; recognition</h2></div>
+    <p class="sec-intro">A patent, a conference talk and a webinar, all from platform work.</p>
+    <div class="recog">
+      <div><small>Patent · 2023</small><h3>System and method for longitudinal non-conforming medical data records</h3><p>US 11,615,869 B1, assigned to IQVIA. <a href="https://patents.google.com/patent/US11615869B1/en" rel="noopener">View patent</a></p></div>
+      <div><small>Selected speaker · Data + AI Summit 2023</small><h3>Automating Sensitive Data (PII/PHI) Detection and Quarantining to a Databricks Clean Room</h3><p>Databricks Data + AI Summit, June 2023. When a hurricane grounded my flights, a HealthVerity colleague delivered the session.</p></div>
+      <div><small>Webinar · 2023</small><h3>How HealthVerity Automates Data Pipelines to Low Code</h3><p>March 2023.</p></div>
+    </div>
+    <div class="stage">
+      <figure class="wall"><img src="img/speaker-wall.jpg" alt="Anfisa's portrait on the speaker wall at Data + AI Summit 2023" loading="lazy"></figure>
+      <figure class="mos"><img src="img/moscone.jpg" alt="Anfisa at the Moscone Center in San Francisco" loading="lazy"></figure>
+    </div>
+    <p class="stagecap">My portrait on the Data + AI Summit 2023 speaker wall, and at the Moscone Center in San Francisco.</p>
+  </div>
+</section>
+
+<!-- 06 ABOUT -->
+<section id="about" class="about">
+  <div class="wrap">
+    <div class="sec-head"><span class="num">06</span><h2>About</h2></div>
+    <p>I started my career in the early 2000s writing SQL against patient-level prescription data, and I've been making sense of healthcare data ever since. I went from analyst, to building syndicated data products, to leading platform architecture, and now to bringing AI into those platforms.</p>
+    <p>I've stayed hands-on by choice. The details of the data usually decide whether a strategy works in practice. What I enjoy most is turning fragmented, difficult data problems into platforms that teams can build on, and developing the people who make those platforms succeed.</p>
+    <div class="facts">
+      <span><b>Based in</b> Greater Philadelphia</span>
+      <span><b>Studied</b> Applied Mathematics, State University, Minsk</span>
+      <span><b>Languages</b> English, Russian, Belarusian; Polish (reading)</span>
+    </div>
+    <h3 style="font-size:22px;margin-top:44px">Off the clock</h3>
+    <p style="color:var(--muted);font-size:16px;margin-top:6px;max-width:760px">I love being active and outdoors, whether that means hiking, skiing or a game of tennis. Mountains are my favorite place. Their scale and quiet power fascinate me, and I always come back from them calmer and with a clearer head. Art has been part of my life from the start, since both my parents are artists, and interior design is one of my great passions. Most of all, I love spending time with my family, on the slopes, on the trail, or travelling.</p>
+    <div class="offclock">
+      <figure class="sm"><img src="img/hiking.jpg" alt="Anfisa hiking at a mountain summit" loading="lazy"></figure>
+      <figure class="sm"><img src="img/skiing.jpg" alt="Anfisa skiing" loading="lazy" style="object-position:50% 30%"></figure>
+      <figure class="sm"><img src="img/family-ski.jpg" alt="Anfisa and her family on a ski lift bench" loading="lazy"></figure>
+      <figure class="sm"><img src="img/family-zipline.jpg" alt="Anfisa and her family in zip line helmets above autumn hills" loading="lazy"></figure>
+      <figure class="sm"><img src="img/curacao.jpg" alt="Anfisa and her daughter in Curaçao" loading="lazy" style="object-position:30% 50%"></figure>
+      <figure class="sm"><img src="img/tennis.jpg" alt="Anfisa on the tennis court" loading="lazy" style="object-position:40% 20%"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="wrap"><div class="panel">
+    <h2>Let's talk about your next data platform or AI initiative.</h2>
+    <p>I'm open to senior data, platform and AI leadership roles.</p>
+    <div class="btns">
+      <a class="btn primary js-mail" href="#contact">Email me</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/anfisak/" rel="noopener">LinkedIn</a>
+      <a class="btn ghost" href="resume/AnfisaCullins_Resume.pdf">Download resume</a>
+    </div>
+  </div></div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Anfisa Cullins</span>
+    <span><a class="js-mail" href="#contact">Email</a> · <a href="https://www.linkedin.com/in/anfisak/" rel="noopener">LinkedIn</a> · <a href="resume/AnfisaCullins_Resume.pdf">Resume</a></span>
+  </div>
+</footer>
+<script>
+(function(){
+  var h=document.querySelector('header.top');
+  function onScroll(){h.classList.toggle('scrolled',window.scrollY>20)}
+  onScroll();window.addEventListener('scroll',onScroll,{passive:true});
+  var sel='.sec-head,.sec-intro,.arc>div,.case,.more>div,.idea,.two>div,.domain,.use,.found,.funnel-box,.stack>div,.recog>div,.stage,.about p,.facts,.offclock figure,.contact .panel,.stat';
+  var els=document.querySelectorAll(sel);
+  els.forEach(function(el,i){el.classList.add('reveal');el.style.transitionDelay=(i%4)*70+'ms'});
+  var fun=document.querySelector('.funnel');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+    els.forEach(function(el){io.observe(el)}); if(fun)io.observe(fun);
+  } else { els.forEach(function(el){el.classList.add('in')}); if(fun)fun.classList.add('in'); }
+})();
+
+// Email address is assembled only when clicked, so it never appears in the page source
+document.querySelectorAll('.js-mail').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();var u=['an','fisa'].join(''),d=['gmail','com'].join('.');window.location.href='mai'+'lto:'+u+'@'+d;});});
+</script>
+</body>
+</html>

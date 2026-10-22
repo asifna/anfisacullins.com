@@ -216,14 +216,16 @@ details[open] summary::after{content:"–"}
 @media (max-width:520px){.stack{grid-template-columns:1fr}}
 
 /* recognition */
-.recog{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.recog{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.recog>div{grid-column:span 2}
+.recog>div:nth-last-child(-n+2){grid-column:span 3}
 .recog>div{background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px;border-top:6px solid var(--coral);box-shadow:var(--shadow)}
 .recog small{color:var(--coral-d);font-weight:700;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase}
 .recog h3{font-size:19px;margin:10px 0 10px;line-height:1.3}
 .recog p{color:var(--muted);font-size:14px;margin:0}
 .recog .launch{border-top-color:var(--indigo)}
 .recog .launch small{color:var(--indigo)}
-@media (max-width:820px){.recog{grid-template-columns:1fr}}
+@media (max-width:820px){.recog{grid-template-columns:1fr}.recog>div,.recog>div:nth-last-child(-n+2){grid-column:auto}}
 .stage{display:grid;grid-template-columns:220px 248px;gap:16px;margin-top:28px}
 .stage figure{margin:0;border-radius:16px;overflow:hidden;height:330px;box-shadow:var(--shadow)}
 .stage img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .5s}
@@ -558,9 +560,11 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 <section id="recognition">
   <div class="wrap">
     <div class="sec-head"><span class="num">05</span><h2>Speaking, recognition &amp; launches</h2></div>
-    <p class="sec-intro">A product launch, a patent, two industry awards, a conference talk and a webinar, all from platform work.</p>
+    <p class="sec-intro">Three products, a patent, two industry awards, a conference talk and a webinar, all from platform work.</p>
     <div class="recog">
       <div class="launch"><small>Product launch · 2025</small><h3>Data Foundry, ConcertAI</h3><p>Conceived and led from roadmap to launch: I assessed the stack, brought in Databricks and built the product, which is now one of ConcertAI's core foundational offerings. <a href="https://www.concertai.com/data-foundry" target="_blank" rel="noopener">See Data Foundry</a></p></div>
+      <div class="launch"><small>Product launch · 2024</small><h3>taXonomy, HealthVerity</h3><p>My team built taXonomy and its data products: about 245 million patient journeys from 225+ payers. It is now the foundation of taXonomy Pathways. <a href="https://healthverity.com/?p=10925" target="_blank" rel="noopener">Read the announcement</a></p></div>
+      <div class="launch"><small>MVP delivered · 2025</small><h3>Cadence Suite, ConcertAI</h3><p>My team delivered the GenAI MVP for Field Reimbursement Managers in ConcertAI's commercialization operating system. <a href="https://www.concertai.com/cadence-suite-commercialization-operating-system" target="_blank" rel="noopener">See Cadence Suite</a></p></div>
       <div><small>Patent · 2023</small><h3>System and method for longitudinal non-conforming medical data records</h3><p>US 11,615,869 B1, assigned to IQVIA. <a href="https://patents.google.com/patent/US11615869B1/en" rel="noopener">View patent</a></p></div>
       <div><small>Award winner · 2018</small><h3>Cloudera Data Impact Award</h3><p>IQVIA's data platform on Cloudera, including the U.S. data lake my engineering teams delivered, won in 2018 and was a finalist again in 2019. <a href="https://cloudera.com/customers/iqvia.html" target="_blank" rel="noopener">Read the case study</a></p></div>
       <div><small>Award finalist · 2023</small><h3>Databricks Data Team Democratization Award</h3><p>HealthVerity was named a finalist for its Lakehouse and Unity Catalog platform, which lets healthcare partners exchange HIPAA-compliant real-world data. I was a major contributor to that platform work. <a href="https://www.databricks.com/blog/empowering-all-teams-data-ai-announcing-finalists-2023-databricks-data-team-democratization" target="_blank" rel="noopener">Read the announcement</a></p></div>
